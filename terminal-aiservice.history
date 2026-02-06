@@ -1,0 +1,1000 @@
+ 1005  sudo apt autoremove --purge -y
+ 1006  sudo rm /etc/apt/sources.list.d/waydroid-ubuntu-waydroid-*.list*
+ 1007  sudo rm /etc/apt/sources.list.d/umang-ubuntu-indicator-stickynotes-*.list*
+ 1008  dpkg -l | grep waydroid
+ 1009  npm run dev
+ 1010  git add .
+ 1011  git commit -m "prompt node with edges added"
+ 1012  git branch -aal
+ 1013  git push origin promptNode
+ 1014  git checkout main
+ 1015  git pull origin main
+ 1016  git merge promptNode
+ 1017  git push origin main
+ 1018  git add .
+ 1019  git commit -m "eslint ignored"
+ 1020  git push origin main 
+ 1021  git add .
+ 1022  git commit -m "build el on sidebar code fixed "
+ 1023  git push origin main 
+ 1024  git add .
+ 1025  git commit -m "chatendref and chatarearef solved  "
+ 1026  git push origin main 
+ 1027  git add .
+ 1028  git commit -m "compute.ts file error solved "
+ 1029  git push origin main 
+ 1030  git add .
+ 1031  git commit -m "compute.ts file error solved "
+ 1032  git push origin main 
+ 1033  npm run dev 
+ 1034  git add .
+ 1035  git commit -m "ec2 port added"
+ 1036  git push origin main 
+ 1037  npm run build
+ 1038  npm run dev 
+ 1039  git add .
+ 1040  git commit -m "http to https"
+ 1041  git push origin main 
+ 1042  # In your frontend project directory
+ 1043  git add api/chat.js
+ 1044  git add . # your updated component files
+ 1045  git commit -m "Add serverless proxy for AWS backend connection"
+ 1046  git push origin main
+ 1047  # Deploy the updated proxy
+ 1048  git add api/chat.js
+ 1049  git commit -m "Add debugging logs to proxy function"
+ 1050  git push origin main
+ 1051  git add .
+ 1052  git commit -m "markdown uncomment"
+ 1053  git push origin main 
+ 1054  npm run build
+ 1055  git add .
+ 1056  git commit -m "logo removed needs to be changed"
+ 1057  git push origin main 
+ 1058  npm run build 
+ 1059  git add .
+ 1060  git commit -m "promtp flow is fixed and not in br tag"
+ 1061  git push origin main 
+ 1062  npm run build 
+ 1063  git add .
+ 1064  git commit -m "reply line of change"
+ 1065  git push origin main 
+ 1066  node -v
+ 1067  git add .
+ 1068  git commit -m "node fetch and version error solved"
+ 1069  git push origin main 
+ 1070  ls
+ 1071  git clone https://github.com/Dipang-bhadrecha/TrackApply.git
+ 1072  ls
+ 1073  git clone https://github.com/Dipang-bhadrecha/trackApply.git
+ 1074  ls
+ 1075  cd trackApply/
+ 1076  ls
+ 1077  git init 
+ 1078  git remote -v
+ 1079  git branch -b "develop"
+ 1080  git branch b "develop"
+ 1081  git branch b develop
+ 1082  git branch -b develop
+ 1083  clear
+ 1084  git branch develop
+ 1085  git checkout develop 
+ 1086  git push origin develop 
+ 1087  git remote - v
+ 1088  git remote -v
+ 1089  git branch --all
+ 1090  git push origin develop 
+ 1091  ls -al ~/.ssh
+ 1092  eval "$(ssh-agent -s)"
+ 1093  ssh-add ~/.ssh/id_ed25519
+ 1094  ssh-add -l
+ 1095  cat ~/.ssh/id_ed25519.pub
+ 1096  git remote set-url origin git@github.com:yourusername/trackApply.git
+ 1097  git remote -v
+ 1098  ssh -T git@github.com
+ 1099  git push origin develop
+ 1100  git branch --all
+ 1101  git remote -v
+ 1102  git push origin develop
+ 1103  git remote set-url origin git@github.com:knowmadic/trackApply.git
+ 1104  git remote -v
+ 1105  git push origin develop
+ 1106  ssh -T git@github.com
+ 1107  git push origin develop
+ 1108  git remote set-url origin git@github.com:Dipang-bhadrecha/trackApply.git
+ 1109  git remote -v
+ 1110  git push origin develop
+ 1111  git branch --all
+ 1112  code .
+ 1113  npm init -y
+ 1114  ls
+ 1115  python -m venv fastapi-env
+ 1116  python3 -m venv fastapi-env
+ 1117  source fastapi-env/bin/activate
+ 1118  pip install "fastapi[standard]" uvicorn
+ 1119  # Install the package that links 'python' to 'python3'
+ 1120  sudo apt install python-is-python3
+ 1121  # Now you can use 'python' command
+ 1122  python --version  # This will now work
+ 1123  python -m venv fastapi-env
+ 1124  echo 'from fastapi import FastAPI
+ 1125  app = FastAPI()
+ 1126  @app.get("/")
+ 1127  def read_root():
+ 1128      return {"message": "Hello FastAPI!"}' > main.py
+ 1129  fastapi dev main.py 
+ 1130  clear
+ 1131  fastapi dev main.py 
+ 1132  sudo apt update && upgrade
+ 1133  cllear
+ 1134  clear
+ 1135  quit
+ 1136  exit
+ 1137  source "/home/knowmadic/Github repo/trackApply/fastapi-env/bin/activate"
+ 1138  git add .
+ 1139  git commit -m "fastapi backend for linkedin scrapper api added"
+ 1140  git branch --all
+ 1141  git push origin main 
+ 1142  fastapi dev main.py 
+ 1143  fastapi dev main.py
+ 1144  ource fastapi-env/bin/activate3
+ 1145  source fastapi-env/bin/activate
+ 1146  fastapi dev main.py
+ 1147  # 1. Install dependencies
+ 1148  pip install -r requirements.txt
+ 1149  # 2. Run the server
+ 1150  fastapi dev main.py
+ 1151  # 3. Test the parser API
+ 1152  # POST to http://localhost:8000/api/v1/parse/linkedin
+ 1153  # With body: {"raw_text": "your pasted LinkedIn jobs"}
+ 1154  # 4. Access interactive docs
+ 1155  # http://localhost:8000/docs
+ 1156  pip install -r requirements.txt
+ 1157  fastapi dev main.py
+ 1158  pip install pydantic-settings
+ 1159  pip install -r requirements.txt
+ 1160  fastapi dev main.py
+ 1161  npm init -y
+ 1162  ls
+ 1163  git status
+ 1164  git add .
+ 1165  git commit -m "package.json" added
+ 1166  git commit -m "package.json added" 
+ 1167  git branch --a;;
+ 1168  git branch --all
+ 1169  git push origin main 
+ 1170  git branch --all
+ 1171  git remote -v
+ 1172  npm install express
+ 1173  npm install --save-dev nodemon
+ 1174  mkdir src
+ 1175  mkdir src/config src/controllers src/models src/routes src/middlewares src/services src/utils
+ 1176  touch src/app.js src/server.js
+ 1177  touch .env .gitignore README.md
+ 1178  code .
+ 1179  git status
+ 1180  tree 
+ 1181  tree -I __pycache__/ fastapi-env/
+ 1182  tree -I "__pycache__|fastapi-env"
+ 1183  fastapi dev main.py
+ 1184  git add .
+ 1185  git commit -m "Initial Express.js project setup with TrackApplyExpress structure"
+ 1186  git push -u origin main
+ 1187  code .
+ 1188  npm run dev 
+ 1189  git branch --alol
+ 1190  git branch --all
+ 1191  git checkout dev 
+ 1192  npm run dev 
+ 1193  git status 
+ 1194  git branch 
+ 1195  git add .
+ 1196  git commit -m "basic design updated "
+ 1197  git push origin followUp-Node 
+ 1198  code .
+ 1199  code .
+ 1200  git status 
+ 1201  git branch --all
+ 1202  git checkout -b dev 
+ 1203  git push origin dev 
+ 1204  git status 
+ 1205  cd 
+ 1206  cd Downloads/
+ 1207  dpkg -i mongodb-compass_1.47.1_amd64.deb 
+ 1208  sudo dpkg -i mongodb-compass_1.47.1_amd64.deb 
+ 1209  cd
+ 1210  npm run dev 
+ 1211  npm run start
+ 1212  npm install cors
+ 1213  npm install --save-dev @types/cors
+ 1214  npm install cors body-parser
+ 1215  npm install @types/cors @types/express @types/node typescript ts-node --save-dev
+ 1216  npm run build
+ 1217  npm run start
+ 1218  npm run build
+ 1219  npm run start
+ 1220  npm run dev
+ 1221  # Install ts-node globally if you haven't already
+ 1222  npm install -g ts-node
+ 1223  # Clear the dist directory if it exists
+ 1224  rm -rf dist/
+ 1225  # Build the project
+ 1226  npm run build
+ 1227  # Start the server
+ 1228  npm run start
+ 1229  npm run dev
+ 1230  npm run dev 
+ 1231  npm run start
+ 1232  npm install --save-dev typescript ts-node ts-node-dev @types/node @types/express
+ 1233  npx tsc --init
+ 1234  npm run dev 
+ 1235  npm install cors
+ 1236  npm run dev 
+ 1237  cd ..
+ 1238  ls
+ 1239  cd TrackApplyExpress/
+ 1240  tree -i node_modules
+ 1241  tree -I node_modules/
+ 1242  code .
+ 1243  npm install --save-dev @types/cors
+ 1244  npm run dev 
+ 1245  sudo fdisk -l
+ 1246  sudo umount /dev/sdb*
+ 1247  sudo fdisk /dev/sdb
+ 1248  sudo umount /dev/sdb1
+ 1249  sudo fdisk -l
+ 1250  sudo umount /dev/sdb*
+ 1251  sudo wipefs -a /dev/sdb
+ 1252  sudo parted /dev/sdb --script mklabel gpt
+ 1253  sudo parted /dev/sdb --script mkpart primary exfat 0% 100%
+ 1254  sudo mkfs.exfat -n MYUSB /dev/sdb1
+ 1255  lsblk -f
+ 1256  sudo parted /dev/sdb --script mkpart primary fat32 0% 100%
+ 1257  sudo apt update && sudo apt install -y exfatprogs
+ 1258  sudo mkfs.exfat -n MYUSB /dev/sdb1
+ 1259  sudo add-apt-repository --remove ppa:umang/indicator-stickynotes
+ 1260  sudo apt update
+ 1261  sudo apt install -y exfatprogs
+ 1262  sudo mkfs.exfat -n MYUSB /dev/sdb1
+ 1263  lsblk -f
+ 1264  sudo mkfs.vfat -F 32 -n MYUSB /dev/sdb1
+ 1265  lsblk -f
+ 1266  sudo mkdir -p /media/MYUSB
+ 1267  sudo nano /etc/fstab
+ 1268  sudo umount /dev/sdb1
+ 1269  sudo mkfs.vfat -F 32 -n MYUSB /dev/sdb1
+ 1270  sudo add-apt-repository ppa:obsproject/obs-studio
+ 1271  sudo apt update
+ 1272  sudo apt install obs-studio
+ 1273  code .
+ 1274  git remote -v
+ 1275  npm run dev 
+ 1276  git add .
+ 1277  git commit -m "profile updated project added"
+ 1278  git push origin main 
+ 1279  npm run dev 
+ 1280  sudo snap install teams-for-linux
+ 1281  clear
+ 1282  sudo snap install teams-for-linux
+ 1283  teams-for-linux
+ 1284  code .
+ 1285  code .
+ 1286  npm run dev
+ 1287  git branch 
+ 1288  npm run dev 
+ 1289  code .
+ 1290  git add .
+ 1291  git commit -m "changing about me section "
+ 1292  git push origin main 
+ 1293  git add .
+ 1294  git commit -m "landing page added successfully"
+ 1295  git push origin followUp-Node 
+ 1296  git branch --all
+ 1297  git checkout main
+ 1298  git pull origin main
+ 1299  git merge feature/follow-up-branch
+ 1300  git merge followUp-Node
+ 1301  git add .
+ 1302  git commit -m "follow up merge to main"
+ 1303  npm run dev 
+ 1304  git push origin main 
+ 1305  npm run dev 
+ 1306  npm run dev 
+ 1307  npm run build 
+ 1308  git add .
+ 1309  git commit -m "fixing deploying error"
+ 1310  git push origin main 
+ 1311  npm run build 
+ 1312  git add .
+ 1313  git commit -m "deployment error fix in main" 
+ 1314  git push origin main 
+ 1315  npm run build 
+ 1316  pnpm install
+ 1317  npm run build
+ 1318  node -v
+ 1319  pnpm -v
+ 1320  corepack enable
+ 1321  sudo npm install -g pnpm
+ 1322  pnpm -v
+ 1323  pnpm install
+ 1324  git add .
+ 1325  git commit -m "deployment error fix in main pnpm error" 
+ 1326  git push origin main 
+ 1327  npm run dev 
+ 1328  sudo apt update & upgrade 
+ 1329  sudo apt update
+ 1330  sudo apt upgrade
+ 1331  code .
+ 1332  npm run dev 
+ 1333  code .
+ 1334  npm run dev 
+ 1335  code .
+ 1336  npm i remark-gfm
+ 1337  npm i rehype-highlight
+ 1338  npm i
+ 1339  npm run dev 
+ 1340  code .
+ 1341  npm run dev 
+ 1342  clear
+ 1343  code .
+ 1344  cd 
+ 1345  cd Downloads/
+ 1346  ls
+ 1347  clear
+ 1348  ls
+ 1349  sudo dpkg -i dbeaver-ce_25.3.0_amd64.deb 
+ 1350  nano
+ 1351  ls
+ 1352  clear 
+ 1353  ls
+ 1354  nano docker-compose.yml 
+ 1355  cd src/
+ 1356  mkdir config
+ 1357  mkdir data
+ 1358  npm install --save node-fetch
+ 1359  npm install --save-dev typescript ts-node-dev @types/node @types/express
+ 1360  npm run dev
+ 1361  # runtime (if you still want node-fetch installed)
+ 1362  npm install node-fetch
+ 1363  # dev tools for TypeScript
+ 1364  npm install --save-dev typescript ts-node-dev @types/node @types/express
+ 1365  npm run dev
+ 1366  npm install pg
+ 1367  npm install --save-dev @types/pg
+ 1368  clear
+ 1369  npm run dev 
+ 1370  git add .
+ 1371  git commit -m "markdown error removed"
+ 1372  git push origin main 
+ 1373  npm i pg-pool
+ 1374  npm i 
+ 1375  cd "/home/knowmadic/Github repo/promtp-learn_backend" && npm run dev
+ 1376  cat "/home/knowmadic/Github repo/promtp-learn_backend/package.json" | wc -c
+ 1377  node -e "console.log(JSON.parse(require('fs').readFileSync('/home/knowmadic/Github repo/promtp-learn_backend/package.json', 'utf8')))" 2>&1 | head -20
+ 1378  cd "/home/knowmadic/Github repo/promtp-learn_backend" && npm cache clean --force && npm install
+ 1379  git add .
+ 1380  git commit -m "markdown added succesfully in response format"
+ 1381  git push origin main 
+ 1382  npm run build 
+ 1383  git add .
+ 1384  git commit -m "public ip change after restart the server"
+ 1385  git push origin main 
+ 1386  npm run build 
+ 1387  npm cache clean --force
+ 1388  npm install
+ 1389  npm i pg-pool
+ 1390  npm run dev 
+ 1391  npm install jsonwebtoken
+ 1392  npm install --save-dev @types/jsonwebtoken
+ 1393  npm install bcryptjs
+ 1394  npm install --save-dev @types/bcryptjs
+ 1395  npm install express-validator
+ 1396  cd
+ 1397  systemctl list-units --type=service
+ 1398  systemctl list-units --type=service --all
+ 1399  systemctl list-units | grep snap
+ 1400  apt-mark showmanual
+ 1401  sudo apt autoremove --dry-run
+ 1402  sudo apt autoremove
+ 1403  sudo apt install deborphan
+ 1404  deborphan
+ 1405  sudo apt purge $(deborphan)
+ 1406  grep " install " /var/log/dpkg.log
+ 1407  zgrep " install " /var/log/dpkg.log.*
+ 1408  clear
+ 1409  docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
+ 1410  docker-compose up -d db
+ 1411  ls -l /var/run/docker.sock
+ 1412  docker ps --filter "name=promptlearn" --format "table {{.Names}}\t{{.Ports}}"
+ 1413  docker exec -it promptlearn-db-db-1 psql -U promptlearn -d promptlearn_dev -c "\dt"
+ 1414  docker exec -it promptlearn-db-db-1 psql -U promptlearn -d promptlearn_dev
+ 1415  npm ls mongoose
+ 1416  sudo -u postgres psql -c "\du"
+ 1417  systemctl status postgresql
+ 1418  ps aux | grep postgres
+ 1419  psql --version
+ 1420  which psql
+ 1421  psql -U promptlearn -d promptlearn_dev
+ 1422  psql -U knowmadic -d promptlearn_dev
+ 1423  psql
+ 1424  docker exec -it promptlearn-db-db-1 psql -U promptlearn -d promptlearn_dev
+ 1425  npm run dev 
+ 1426  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev -c "\dt"
+ 1427  curl -v -X POST http://localhost:4000/api/auth/register   -H "Content-Type: application/json"   -d '{"email":"alice@example.com","password":"StrongPass123","confirmPassword":"StrongPass123"}'
+ 1428  curl -v -X POST http://localhost:3003/api/auth/register   -H "Content-Type: application/json"   -d '{"email":"alice@example.com","password":"StrongPass123","confirmPassword":"StrongPass123"}'
+ 1429  clear
+ 1430  curl -v -X POST http://localhost:4000/api/auth/register   -H "Content-Type: application/json"   -d '{"email":"alice@example.com","password":"StrongPass123","confirmPassword":"StrongPass123"}'
+ 1431  docker ps --filter "name=promptlearn" --format "table {{.Names}}\t{{.Ports}}"
+ 1432  npm i
+ 1433  psql -d promptlearn -f sql/create_users_table.sql
+ 1434  npm run dev
+ 1435  psql -d promptlearn -f sql/create_users_table.sql
+ 1436  npm run dev
+ 1437  npm install
+ 1438  npm run dev
+ 1439  npm i 
+ 1440  npm run dev 
+ 1441  npm run dev
+ 1442  git branch --all
+ 1443  git checkout followUp-Node
+ 1444  git pull --refmap
+ 1445  clear
+ 1446  git pull main
+ 1447  git pull origin main 
+ 1448  npm run dev 
+ 1449  code .
+ 1450  code .
+ 1451  code .
+ 1452  git branch --all
+ 1453  git add .
+ 1454  git commit -m "database connection configure successfully"
+ 1455  git push origin dev
+ 1456  npm view next versions --json | tail -20
+ 1457  npm install next@16.1.0-canary.20
+ 1458  npm run dev 
+ 1459  npm run dev
+ 1460  nvm install 20
+ 1461  nvm use 20
+ 1462  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+ 1463  sudo apt-get install -y nodejs
+ 1464  node --version
+ 1465  npm --version
+ 1466  npm run dev
+ 1467  npm run dev 
+ 1468  git add .
+ 1469  git commit -m "textnote node and select copy for chat is completed"
+ 1470  git push origin main
+ 1471  git add .
+ 1472  git commit -m "resize button design issue fix in textnode"
+ 1473  git push origin main
+ 1474  git add .
+ 1475  git commit -m "resize button design issue fix in textnode"
+ 1476  git push origin main
+ 1477  git add .
+ 1478  git commit -m "prompt design changed"
+ 1479  git push origin followUp-Node
+ 1480  git checkout main
+ 1481  git pull origin main
+ 1482  git pull origin followUp-Node
+ 1483  git pull origin main
+ 1484  git push origin main
+ 1485  git checkout -b textnode
+ 1486  git pull origin main
+ 1487  git push origin textnode
+ 1488  git add .
+ 1489  git commit -m "textnode is added"
+ 1490  git push origin textnode
+ 1491  git checkout main
+ 1492  git merge textnode
+ 1493  git push origin main
+ 1494  npm run build
+ 1495  npm install next@latest
+ 1496  rm -rf node_modules .next package-lock.json
+ 1497  npm install
+ 1498  npm run build
+ 1499  npm run bui;d 
+ 1500  npm run build
+ 1501  nvm --version
+ 1502  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+ 1503  source ~/.bashrc
+ 1504  nvm install 22
+ 1505  nvm use 22
+ 1506  node -v
+ 1507  npm install
+ 1508  npm run build
+ 1509  npm install next@latest
+ 1510  npm install next@16.1.0
+ 1511  npm run build
+ 1512  npm install next@latest
+ 1513  npm install react-server-dom-webpack@latest
+ 1514  npm install react-server-dom-parcel@latest
+ 1515  npm install react-server-dom-turbopack@latest
+ 1516  rm -rf node_modules package-lock.json
+ 1517  npm install
+ 1518  git add .
+ 1519  git commit -m "vercel version match with local "
+ 1520  git push origin main
+ 1521  npm run build 
+ 1522  pnpm install
+ 1523  rm pnpm-lock.yaml
+ 1524  npm install
+ 1525  git add .
+ 1526  git commit -m "vercel version match with local "
+ 1527  git push origin main
+ 1528  npm run build 
+ 1529  clear
+ 1530  npm run dev
+ 1531  clear
+ 1532  npm run dev 
+ 1533  npm run dev
+ 1534  npm run dev 
+ 1535  git clone git@github.com:Dipang-bhadrecha/dropthoughts.git
+ 1536  git init
+ 1537  git add .
+ 1538  git commit -m "initial commi to git "
+ 1539  gioclear
+ 1540  git@github.com:Dipang-bhadrecha/dropthoughts.git
+ 1541  git add .
+ 1542  git commit -m "initial commit "
+ 1543  clear
+ 1544  git branch --all
+ 1545  git add .
+ 1546  git commit -m "initial commit with .env file "
+ 1547  git push origin main
+ 1548  gnome-control-center
+ 1549  sudo apt update
+ 1550  sudo apt install --reinstall gnome-control-center
+ 1551  sudio apt update & upgrade
+ 1552  sudo apt update & upgrade
+ 1553  sudo apt update 
+ 1554  ls
+ 1555  cd Github\ repo/
+ 1556  clear
+ 1557  ls
+ 1558  clear
+ 1559  git clone git@github.com:Dipang-bhadrecha/dropthoughts.git
+ 1560  cd dropthoughts/
+ 1561  remote -v
+ 1562  git remote -v
+ 1563  git fetch 
+ 1564  git status
+ 1565  code .
+ 1566  lsusb
+ 1567  fprintd-list
+ 1568  docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+ 1569  docker inspect -f '{{.Name}} started at {{.State.StartedAt}}' promptlearn-db-db-1
+ 1570  # or for prettier:
+ 1571  docker inspect promptlearn-db-db-1 --format '{{.State.StartedAt}}'
+ 1572  docker logs --tail 200 promptlearn-db-db-1
+ 1573  clear
+ 1574  docker volume ls
+ 1575  docker volume inspect promptlearn-db_pgdata   # name may vary; check the listed volumes
+ 1576  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev -c "SELECT now();"
+ 1577  \dt
+ 1578  /dt
+ 1579  \dt
+ 1580  clear
+ 1581  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev
+ 1582  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev
+ 1583  clear
+ 1584  npm run dev
+ 1585  tree - I "node_modules/
+ 1586  tree - I node_modules/
+ 1587  clear
+ 1588  tree src
+ 1589  clear
+ 1590  npm run dev 
+ 1591  npm i
+ 1592  npm i 
+ 1593  clear
+ 1594  npm run dev 
+ 1595  clear
+ 1596  git branch --all
+ 1597  git checkout -b 
+ 1598  git checkout -b "chatView'"
+ 1599  git add .
+ 1600  git commit -m "chatView structure is added "
+ 1601  git push origin chatView
+ 1602  git push chatView
+ 1603  git push origin chatView
+ 1604  git branch -m chatView
+ 1605  git push origin chatView
+ 1606  git checkout main
+ 1607  npm i 
+ 1608  npm run dev 
+ 1609  code .
+ 1610  git add .
+ 1611  git commit -m "src chat and graph view is sepearated"
+ 1612  git push origin main 
+ 1613  npm run build 
+ 1614  git checkout chatView 
+ 1615  git add .
+ 1616  git commit -m "folder structure is in the src "
+ 1617  git push origin main
+ 1618  npm run build
+ 1619  git add .
+ 1620  git commit -m "build error solved path issue on textarea "
+ 1621  git push origin main
+ 1622  npm run build 
+ 1623  git checkout chatView 
+ 1624  git checkout main
+ 1625  npm run dev 
+ 1626  npm i prisma @prisma/client
+ 1627  npx prisma init
+ 1628  npx prisma migrate dev --name init_users
+ 1629  npm install @prisma/client @prisma/cli --save
+ 1630  npm uninstall @prisma/cli
+ 1631  npm install prisma --save-de
+ 1632  npm install zod
+ 1633  npx prisma generate
+ 1634  npm run dev
+ 1635  npx prisma generate
+ 1636  npm run dev   # or node dist/server.js
+ 1637  npx prisma generate
+ 1638  npm run dev 
+ 1639  npm i @prisma/adapter-pg pg
+ 1640  npx prisma generate
+ 1641  npm run dev
+ 1642  npm i zod
+ 1643  npm i bcryptjs jsonwebtoken
+ 1644  npm remove @prisma/client prisma @prisma/adapter-pg
+ 1645  npm remove prisma-client
+ 1646  /prisma
+ 1647  prisma.config.ts
+ 1648  rm -rf node_modules/.prisma
+ 1649  PrismaClient
+ 1650  prisma
+ 1651  adapter
+ 1652  PgAdapter
+ 1653  rm -rf node_modules
+ 1654  npm install
+ 1655  npm i 
+ 1656  npm i --save-dev @types/node
+ 1657  npm run dev
+ 1658  sudo apt updtae 
+ 1659  sudo apt update 
+ 1660  sudo apt upgrade 
+ 1661  cls
+ 1662  ls
+ 1663  /run/user/1000/gvfs/mtp:host=realme_realme_GT_NEO_3T_8b14b305/Internal shared storage
+ 1664  cd Desktop/
+ 1665  LS
+ 1666  ls
+ 1667  cd 
+ 1668  cd
+ 1669  ls
+ 1670  cd /user
+ 1671  cd /run
+ 1672  LS
+ 1673  ls
+ 1674  cd user/
+ 1675  ls
+ 1676  cd 1000/
+ 1677  LS
+ 1678  ls
+ 1679  cd gvfs
+ 1680  ls
+ 1681  cd mtp\:host\=realme_realme_GT_NEO_3T_8b14b305/
+ 1682  ls
+ 1683  cd Internal\ 
+ 1684  cd Internal\ shared\ storage/
+ 1685  ls
+ 1686  cd Android/
+ 1687  LS
+ 1688  ls
+ 1689  cd data/
+ 1690  ls -lrt
+ 1691  cd ..
+ 1692  ls
+ 1693  ls -lrt 
+ 1694  pwd
+ 1695  sudo apt install android-tools-adb android-tools-fastboot
+ 1696  adb devices
+ 1697  adb shell pm trim-caches 999G
+ 1698  adb kill-server
+ 1699  adb start-server
+ 1700  adb devices
+ 1701  adb shell pm trim-caches 999G
+ 1702  adb shell rm -rf /data/system/dropbox/*
+ 1703  adb shell rm -rf /data/anr/*
+ 1704  adb shell rm -rf /data/log/*
+ 1705  adb shell rm -rf /sdcard/log/*
+ 1706  adb shell pm clear com.google.android.gms
+ 1707  adb reboot
+ 1708  adb shell dumpsys diskstats | head -n 40
+ 1709  adb shell pm clear com.instagram.android
+ 1710  adb shell pm clear com.facebook.katana
+ 1711  adb shell pm clear com.snapchat.android
+ 1712  adb shell pm clear com.netflix.mediaclient
+ 1713  adb shell pm clear com.spotify.music
+ 1714  adb shell du -sh /sdcard/WhatsApp/Media/*
+ 1715  adb shell dumpsys diskstats | head -n 40
+ 1716  adb devices
+ 1717  adb shell dumpsys diskstats
+ 1718  adb shell pm clear com.google.android.googlequicksearchbox
+ 1719  adb shell pm clear com.android.vending
+ 1720  adb shell pm clear com.google.android.youtube
+ 1721  adb shell du -sh /sdcard/Android/data/com.whatsapp
+ 1722  adb shell pm list packages -3
+ 1723  adb shell pm clear com.google.android.youtube
+ 1724  adb shell pm clear com.google.android.googlequicksearchbox
+ 1725  adb shell pm clear com.android.vending
+ 1726  adb shell pm clear com.google.android.gms
+ 1727  adb shell rm -rf /sdcard/Android/data/com.netflix.mediaclient/files/Download/*
+ 1728  adb shell rm -rf /sdcard/Android/data/com.spotify.music/files/*
+ 1729  adb shell rm -rf /sdcard/Android/data/com.google.android.youtube/files/*
+ 1730  #!/bin/bash
+ 1731  echo "=== Clearing app caches ==="
+ 1732  adb shell pm clear com.google.android.youtube
+ 1733  adb shell pm clear com.google.android.googlequicksearchbox
+ 1734  adb shell pm clear com.android.vending
+ 1735  adb shell pm clear com.google.android.gms
+ 1736  adb shell pm clear com.google.android.apps.photos
+ 1737  echo "=== Removing offline downloads ==="
+ 1738  adb shell rm -rf /sdcard/Android/data/com.netflix.mediaclient/files/Download/*
+ 1739  adb shell rm -rf /sdcard/Android/data/com.spotify.music/files/*
+ 1740  adb shell rm -rf /sdcard/Android/data/com.google.android.youtube/files/*
+ 1741  echo "=== Disabling bloat apps (reversible) ==="
+ 1742  adb shell pm disable-user --user 0 com.heytap.browser
+ 1743  adb shell pm disable-user --user 0 com.heytap.music
+ 1744  adb shell pm disable-user --user 0 com.coloros.video
+ 1745  adb shell pm disable-user --user 0 com.coloros.weather2
+ 1746  adb shell pm disable-user --user 0 com.oplus.games
+ 1747  echo "=== Cleaning downloads folder ==="
+ 1748  adb shell rm -rf /sdcard/Download/*
+ 1749  echo "=== Cleaning temporary logs ==="
+ 1750  adb shell rm -rf /sdcard/Android/data/com.android.shell/files/logs/*
+ 1751  adb shell rm -rf /sdcard/Android/data/com.oplus.powermonitor/files/logs/*
+ 1752  echo "=== Done! ==="
+ 1753  echo "Reboot your phone and check storage for OTA update"
+ 1754  vi clean.sh
+ 1755  sh -x clean.sh 
+ 1756  sh +x clean.sh 
+ 1757  sh -x clean.sh 
+ 1758  npm run dev 
+ 1759  git add .
+ 1760  git commit -m "right hand sidebar fixed "
+ 1761  git push origin chatView
+ 1762  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev
+ 1763  winget upgrade dbeaver.dbeaver
+ 1764  winget upgrade --id dbeaver.dbeaver --silent
+ 1765  sudo apt update
+ 1766  sudo apt install --only-upgrade dbeaver-ce
+ 1767  apt list --installed | grep dbeaver-ce
+ 1768  dbeaverc.exe -version
+ 1769  code .
+ 1770  npm run dev 
+ 1771  git add .
+ 1772  git commit -m "chat module added successfully"
+ 1773  git push origin main 
+ 1774  git branch --all
+ 1775  git checkout -b "chat"
+ 1776  git fetch 
+ 1777  git status 
+ 1778  git pull origin main
+ 1779  git push origin chat
+ 1780  git add .
+ 1781  git commit -m "conversation flow added "
+ 1782  git push origin chat
+ 1783  git checkout main
+ 1784  git fetch 
+ 1785  git fetch origin
+ 1786  git status 
+ 1787  git merge chat 
+ 1788  git push origin main
+ 1789  npm run dev 
+ 1790  git branch --all
+ 1791  npm run dev 
+ 1792  clear
+ 1793  npm run dev
+ 1794  git add .
+ 1795  git commit -m "backend clean architecture "
+ 1796  npm run dev 
+ 1797  npm run dev 
+ 1798  git add .
+ 1799  git commit -m "nothing change "
+ 1800  git push origin main
+ 1801  npm run dev 
+ 1802  code .
+ 1803  code .
+ 1804  npm i passport
+ 1805  npm install jsonwebtoken
+ 1806  npm install --save-dev @types/jsonwebtoken
+ 1807  git add .
+ 1808  git commit -m "login signup change"
+ 1809  git push origin main 
+ 1810  npm install winston
+ 1811  git add .
+ 1812  git commit -m "logger error fixed "
+ 1813  git push origin main 
+ 1814  sudo apt install gnome-tweaks
+ 1815  tweaks
+ 1816  Tweaks
+ 1817  xmodmap -e "clear lock"
+ 1818  xkbset nullify shift
+ 1819  sudo apt install xkbset
+ 1820  xmodmap -e "clear lock"
+ 1821  xkbset nullify shift
+ 1822  gnome-tweaks
+ 1823  showkey -a
+ 1824  gsettings reset org.gnome.desktop.input-sources xkb-options
+ 1825  code  .
+ 1826  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev
+ 1827  git add .
+ 1828  git commit -m "login signup integrated"
+ 1829  git push origin chatView 
+ 1830  npm run dev
+ 1831  clear
+ 1832  npm run dev 
+ 1833  npm run dev 
+ 1834  npm install --save-dev @types/passport
+ 1835  npm install bcrypt
+ 1836  npm install --save-dev @types/bcrypt
+ 1837  npm install nodemailer
+ 1838  npm install --save-dev @types/nodemailer
+ 1839  npm install passport-github2
+ 1840  npm install --save-dev @types/passport-github2
+ 1841  npm install passport-google-oauth20
+ 1842  npm install --save-dev @types/passport-google-oauth20
+ 1843  clear
+ 1844  npm run dev
+ 1845  npm run start
+ 1846  npm run dev 
+ 1847  npm run dev
+ 1848  npm run dev 
+ 1849  git add .
+ 1850  git commit -m "chat view is fixed here "
+ 1851  npm run dev 
+ 1852  code .
+ 1853  cod e.
+ 1854  code .
+ 1855  powercfg /batteryreport
+ 1856  git add .
+ 1857  git commit -m "rightsidebar design fixed "
+ 1858  gti add .
+ 1859  git commit -m "left rigth sidebar fixed here"
+ 1860  git commit -am "left rigth sidebar fixed here"
+ 1861  git push origin chatView 
+ 1862  git add.
+ 1863  git add .
+ 1864  git commit -m "chat messages lenght is fixed "
+ 1865  git push origin chatView 
+ 1866  npm run dev 
+ 1867  git add .
+ 1868  git commit -m "chat.tsx is deleted change to chatStream.tsx"
+ 1869  git push origin chatView 
+ 1870  git add .
+ 1871  git commit -m "in tegration to chat "
+ 1872  git push origin main 
+ 1873  git add .
+ 1874  git commit -m "auth fixed"
+ 1875  git push origin main 
+ 1876  git add .
+ 1877  git commit -m "sidebar new chat and conversation spaec is added"
+ 1878  git push origin chatView 
+ 1879  git fetch origin 
+ 1880  npm run dev 
+ 1881  npm run dev 
+ 1882  npm run dev
+ 1883  git init 
+ 1884  git branch --all
+ 1885  git push origin main 
+ 1886  cd src/modules/
+ 1887  mkdir ai
+ 1888  cd ai/
+ 1889  touch ai.routes.py
+ 1890  cd ..
+ 1891  mkdir logic
+ 1892  cd ai/
+ 1893  touch ai.controller.py
+ 1894  touch ai.service.py
+ 1895  touch ai.repository.py
+ 1896  touch ai.schemas.py
+ 1897  touch ai.memory.py
+ 1898  cd ./
+ 1899  cd .
+ 1900  cd
+ 1901  ls
+ 1902  code .
+ 1903  git clone git@github.com:Dipang-bhadrecha/promptlearn_ai-service.git
+ 1904  code .
+ 1905  source "/home/knowmadic/Github repo/promptlearn_ai-service/.venv/bin/activate"
+ 1906  "/home/knowmadic/Github repo/promptlearn_ai-service/.venv/bin/python"
+ 1907  uvicorn src.main:app --reload --port 8001
+ 1908  sudo apt install uvicorn
+ 1909  uvicorn src.main:app --reload --port 8001
+ 1910  make dev
+ 1911  make dev dev 
+ 1912  clear
+ 1913  make dev 
+ 1914  python3 -m venv .venv
+ 1915  source .venv/bin/activate
+ 1916  pip install fastapi uvicorn
+ 1917  pip freeze > requirements.txt
+ 1918  make dev
+ 1919  make dev 
+ 1920  make dev
+ 1921  make dev 
+ 1922  which python
+ 1923  python -c "import fastapi, pydantic; print('ok')"
+ 1924  make dev
+ 1925  grep -R "from src" src/
+ 1926  make dev 
+ 1927  pip install httpx
+ 1928  make dev
+ 1929  pip install python-dotenv
+ 1930  make dev
+ 1931  (.venv) python -c "import os; print(os.getenv('GOOGLE_API_KEY'))"
+ 1932  make dev 
+ 1933  python -c "import os; print(os.getenv('GOOGLE_API_KEY'))"
+ 1934  (.venv) python -c "from dotenv import load_dotenv; load_dotenv(); import os; print(os.getenv('GOOGLE_API_KEY'))"
+ 1935  python -c "import os; print(os.getenv('GOOGLE_API_KEY'))"
+ 1936  make dev
+ 1937  make dev 
+ 1938  pip install pydantic
+ 1939  curl -X POST http://localhost:8001/ai/generate   -H "Content-Type: application/json"   -d '{
+ 1940      "user_id": 1,
+ 1941      "conversation_id": 1,
+ 1942      "message": "Hello from curl",
+ 1943      "messages": []
+ 1944    }'
+ 1945  pip install httpx
+ 1946  make dev
+ 1947  git add .
+ 1948  git commit -m "ai service backend for promptlearn"
+ 1949  git push origin main 
+ 1950  PGPASSWORD='Reva@369' psql -h 127.0.0.1 -p 5432 -U promptlearn -d promptlearn_dev
+ 1951  code .
+ 1952  tree -I ".venv/"
+ 1953  npm run dev 
+ 1954  git branch --all
+ 1955  git checkout dev 
+ 1956  git add .
+ 1957  git commit -m "ai backend integration change"
+ 1958  git push origin dev 
+ 1959  git checkout dev 
+ 1960  git checkout main 
+ 1961  npm run dev 
+ 1962  git revert HEAD
+ 1963  git push origin main
+ 1964  git log --oneline --max-count=3
+ 1965  git checkout dev 
+ 1966  git log --oneline main
+ 1967  git cherry-pick ed1e656
+ 1968  git cherry-pick --abort
+ 1969  git cherry-pick ed1e656
+ 1970  git checkout --theirs .
+ 1971  git add .
+ 1972  git cherry-pick --continue
+ 1973  git status
+ 1974  git checkout dev
+ 1975  git merge main
+ 1976  git checkout --ours path/to/file
+ 1977  git add path/to/file
+ 1978  git checkout --ours .
+ 1979  git add .
+ 1980  git commit
+ 1981  git add .
+ 1982  git commit
+ 1983  git add .
+ 1984  git commit -m ""remove commented code on chat llm code 
+ 1985  git commit -m "remove commented code on chat llm code "
+ 1986  git push origin dev 
+ 1987  git checkout main 
+ 1988  git add .
+ 1989  git commit -m "error and all log"
+ 1990  git push origin main
+ 1991  npm run dev 
+ 1992  make dev 
+ 1993  make dev
+ 1994  source "/home/knowmadic/Github repo/promptlearn_ai-service/.venv/bin/activate"
+ 1995  git add .
+ 1996  git commit -m "git ignore added"
+ 1997  git push origin main 
+ 1998  make dev 
+ 1999  nano ~/.openclaw/openclaw.json
+ 2000  cd ..
+ 2001  ls
+ 2002  cd promptlearn_ai-service/
+ 2003  claude
+ 2004  history > terminal-aiservice.history

@@ -1,34 +1,81 @@
-
-# from modules.ai.ai_schemas import GenerateRequest, GenerateResponse
-# from modules.ai.context_builder import build_stm_context
-# from shared.llm_client import call_llm
-
-
-# async def generate_response(req: GenerateRequest) -> GenerateResponse:
-#     messages = build_stm_context(req.messages)
-
-#     assistant_text = await call_llm(messages)
-
-#     return GenerateResponse(
-#         assistant_message=assistant_text,
-#         meta={
-#             "pipeline_version": "stm_v1",
-#             "memory_used": len(messages) > 1,
-#         },
-#     )
-
-from modules.ai.context_builder import build_stm_context
+"""
+AI Service - Main business logic for AI generation
+Now with full memory system integration
+"""
+from modules.ai.ai_schemas import GenerateRequest, GenerateResponse
+from modules.ai.memory.memory_manager import MemoryManager
+from modules.ai.context_builder import SYSTEM_PROMPT
 from shared.llm_client import call_llm
 
-async def generate_response(req):
-    messages = build_stm_context(req.messages)
+# Initialize memory manager (singleton)
+memory_manager = MemoryManager()
 
-    assistant_text = await call_llm(messages)
 
-    return {
-        "assistant_message": assistant_text,
-        "meta": {
-            "pipeline_version": "stm_v1.5",
-            "memory_used": len(messages) > 1,
-        },
-    }
+async def generate_response(req: GenerateRequest) -> GenerateResponse:
+    """
+    Generate AI response with full memory system
+
+    Flow:
+    1. Process conversation through memory manager
+    2. Get enriched context (STM + LTM + summaries)
+    3. Call LLM with smart context
+    4. Save assistant response to memory
+    """
+
+    # 1️⃣ Process conversation through memory system
+    memory_result = await memory_manager.process_conversation(
+        user_id=str(req.user_id),
+        conversation_id=str(req.conversation_id),
+        new_message=req.message,
+        conversation_history=req.messages,
+        max_context_tokens=3000
+    )
+
+    # 2️⃣ Get enriched context
+    enriched_context = memory_result["context"]
+
+    # 3️⃣ Add system prompt if not present
+    if not any(msg.get("role") == "system" for msg in enriched_context):
+        enriched_context.insert(0, {
+            "role": "system",
+            "content": SYSTEM_PROMPT.strip()
+        })
+
+    # 4️⃣ Call LLM
+    assistant_text = await call_llm(enriched_context)
+
+    # 5️⃣ Save assistant response to memory
+    await memory_manager.save_assistant_response(
+        user_id=str(req.user_id),
+        conversation_id=str(req.conversation_id),
+        response=assistant_text
+    )
+
+    # 6️⃣ Return response with rich metadata
+    return GenerateResponse(
+        assistant_message=assistant_text,
+        meta={
+            "pipeline_version": "memory_v2",
+            "memory": memory_result["metadata"],
+            "context_tokens": memory_result["metadata"]["total_tokens"],
+            "stm_enabled": True,
+            "ltm_enabled": True,
+            "smart_retrieval": memory_result["metadata"]["ltm_memories_retrieved"] > 0
+        }
+    )
+
+
+async def get_conversation_summary(user_id: str, conversation_id: str) -> str:
+    """Get summary of a conversation"""
+    return await memory_manager.get_conversation_summary(
+        user_id=str(user_id),
+        conversation_id=str(conversation_id)
+    )
+
+
+async def clear_conversation(user_id: str, conversation_id: str):
+    """Clear all memory for a conversation"""
+    await memory_manager.clear_conversation_memory(
+        user_id=str(user_id),
+        conversation_id=str(conversation_id)
+    )

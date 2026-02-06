@@ -18,11 +18,51 @@ def get_api_key() -> str:
 async def call_llm(messages: List[Dict[str, str]]) -> str:
     api_key = get_api_key()
 
+    # Extract system messages and combine them
+    system_parts = []
     contents = []
+
     for msg in messages:
-        contents.append({
-            "role": "user" if msg["role"] == "user" else "model",
-            "parts": [{"text": msg["content"]}],
+        if msg["role"] == "system":
+            # Collect system messages separately
+            system_parts.append(msg["content"])
+        elif msg["role"] == "user":
+            contents.append({
+                "role": "user",
+                "parts": [{"text": msg["content"]}],
+            })
+        elif msg["role"] == "assistant":
+            contents.append({
+                "role": "model",
+                "parts": [{"text": msg["content"]}],
+            })
+
+    # If no user/assistant messages, create a user message from system
+    if not contents:
+        if system_parts:
+            contents.append({
+                "role": "user",
+                "parts": [{"text": "\n\n".join(system_parts)}],
+            })
+        else:
+            raise ValueError("No messages to send to LLM")
+    else:
+        # Prepend system instructions to the first user message if system messages exist
+        if system_parts:
+            system_instruction = "\n\n".join(system_parts)
+            # Find first user message and prepend system instruction
+            for content in contents:
+                if content["role"] == "user":
+                    original_text = content["parts"][0]["text"]
+                    content["parts"][0]["text"] = f"{system_instruction}\n\n{original_text}"
+                    break
+
+    # Ensure conversation starts with user message (Gemini requirement)
+    if contents and contents[0]["role"] != "user":
+        # If first message is model, add a placeholder user message
+        contents.insert(0, {
+            "role": "user",
+            "parts": [{"text": "Hello"}]
         })
 
     async with httpx.AsyncClient(timeout=30) as client:
