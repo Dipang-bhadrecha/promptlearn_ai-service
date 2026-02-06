@@ -9,10 +9,12 @@ load_dotenv(dotenv_path=ENV_PATH)
 
 from fastapi import FastAPI
 from modules.ai.ai_routes import router as ai_router
+from modules.ai.memory_routes import router as memory_router
 
 app = FastAPI(title="PromptLearn AI Service")
 
 app.include_router(ai_router)
+app.include_router(memory_router)
 
 
 

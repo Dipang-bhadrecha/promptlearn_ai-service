@@ -1,0 +1,18 @@
+{
+  "turns": [
+    {
+      "role": "user",
+      "content": "\nYou are naming a chat conversation.\nGenerate a concise 3-6 word title.\nNo quotes. No punctuation at the end.\n\nUser: what is the local model is \nAssistant: A \"local model\" generally refers to a machine learning model that runs directly on a user's device (like a laptop, phone, or server they control) rather than on a remote server.\n\n\nTitle:\n",
+      "timestamp": "2026-02-06T13:06:30.513583"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, I understand. I will focus on answering only the user's latest question, using past conversation context when relevant, and adapting to new topics as they arise. I will prioritize being helpful and informative.\n",
+      "timestamp": "2026-02-06T13:06:32.144222"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-06T13:06:32.144229",
+    "turn_count": 2
+  }
+}
