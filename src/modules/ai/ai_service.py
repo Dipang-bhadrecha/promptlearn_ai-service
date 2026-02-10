@@ -54,8 +54,13 @@ async def generate_response(req: GenerateRequest) -> GenerateResponse:
                 "content": SYSTEM_PROMPT.strip()
             })
 
-        # 4️⃣ Call LLM
-        assistant_text = await call_llm(enriched_context, options=req.options)
+        # 4️⃣ Call LLM with sensible defaults for "smart" responses
+        options = req.options or {
+            "temperature": 0.4,
+            "top_p": 0.9,
+            "response_length": "long",
+        }
+        assistant_text = await call_llm(enriched_context, options=options)
 
         # 5️⃣ Save assistant response to memory
         await memory_manager.save_assistant_response(
