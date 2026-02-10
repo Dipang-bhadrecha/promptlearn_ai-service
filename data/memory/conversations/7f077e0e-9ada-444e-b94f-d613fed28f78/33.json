@@ -1,0 +1,98 @@
+{
+  "turns": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-10T10:55:49.250958"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-10T11:05:58.640685"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi there! I'm PromptLearn, your AI programming tutor. I'm here to help you learn and improve your coding skills.\n\nTo get started, what programming topic are you interested in learning about today? Or, if you have a specific question, feel free to ask!\n",
+      "timestamp": "2026-02-10T11:06:00.065811"
+    },
+    {
+      "role": "user",
+      "content": "what is css ",
+      "timestamp": "2026-02-10T11:06:04.026934"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you. Before we dive in, could you tell me a bit about your current programming knowledge? Are you a beginner, or do you have experience with certain languages or concepts?\n",
+      "timestamp": "2026-02-10T11:06:05.595903"
+    },
+    {
+      "role": "user",
+      "content": "i am junior dev",
+      "timestamp": "2026-02-10T11:06:21.919676"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi there!\n\nI saw you asked \"what is css\" a bit ago. To make sure I tailor my explanation to your level, have you worked with HTML before, or is CSS completely new to you?\n",
+      "timestamp": "2026-02-10T11:06:23.346305"
+    },
+    {
+      "role": "user",
+      "content": "not new ",
+      "timestamp": "2026-02-10T11:06:34.390628"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi! Since you're a junior dev, I'll skip the super basic explanation.\n\nCSS (Cascading Style Sheets) is the language used to style the visual presentation of HTML elements. Think of HTML as the structure of a webpage and CSS as the paint, furniture, and decorations that make it look good.\n\nKey aspects of CSS:\n\n*   **Selectors:** Target specific HTML elements you want to style (e.g., `h1`, `p`, `.my-class`, `#my-id`).\n*   **Properties:** Define the visual characteristics you want to change (e.g., `color`, `font-size`, `margin`, `background-color`).\n*   **Values:**  Specify the values for those properties (e.g., `color: blue`, `font-size: 16px`).\n\nWant a basic example or a deeper dive into a specific part of CSS?\n",
+      "timestamp": "2026-02-10T11:06:36.828262"
+    },
+    {
+      "role": "user",
+      "content": "Want a basic example or a deeper dive into a specific part of CSS?",
+      "timestamp": "2026-02-10T11:07:05.948303"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi! Since you're a junior dev, I'll skip the super basic explanation.\n\nCSS (Cascading Style Sheets) is the language used to style the visual presentation of HTML elements. Think of HTML as the structure of a webpage and CSS as the paint, furniture, and decorations that make it look good.\n\nKey aspects of CSS:\n\n*   **Selectors:** Target specific HTML elements you want to style (e.g., `h1`, `p`, `.my-class`, `#my-id`).\n*   **Properties:** Define the visual characteristics you want to change (e.g., `color`, `font-size`, `margin`, `background-color`).\n*   **Values:**  Specify the values for those properties (e.g., `color: blue`, `font-size: 16px`).\n\nWant a basic example or a deeper dive into a specific part of CSS?\n",
+      "timestamp": "2026-02-10T11:07:08.270323"
+    },
+    {
+      "role": "user",
+      "content": "yup move to next",
+      "timestamp": "2026-02-10T11:07:24.772132"
+    },
+    {
+      "role": "assistant",
+      "content": "No response from model",
+      "timestamp": "2026-02-10T11:07:25.731562"
+    },
+    {
+      "role": "user",
+      "content": "what is youtube",
+      "timestamp": "2026-02-10T11:07:35.886450"
+    },
+    {
+      "role": "assistant",
+      "content": "No response from model",
+      "timestamp": "2026-02-10T11:07:36.943748"
+    },
+    {
+      "role": "user",
+      "content": "what last response i asked to you ",
+      "timestamp": "2026-02-10T11:16:36.083499"
+    },
+    {
+      "role": "assistant",
+      "content": "No response from model",
+      "timestamp": "2026-02-10T11:16:37.188086"
+    },
+    {
+      "role": "user",
+      "content": "what is css",
+      "timestamp": "2026-02-10T11:16:43.821242"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-10T11:16:43.821254",
+    "turn_count": 18
+  }
+}

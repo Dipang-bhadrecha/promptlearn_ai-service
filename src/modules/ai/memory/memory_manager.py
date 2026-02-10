@@ -45,12 +45,20 @@ class MemoryManager:
         - Metadata about memory usage
         """
 
+        # Ensure the latest user message is included in context
+        effective_history = list(conversation_history or [])
+        if not effective_history or not (
+            effective_history[-1].role == "user"
+            and effective_history[-1].content == new_message
+        ):
+            effective_history.append(Message(role="user", content=new_message))
+
         # 1. Load or create conversation state
         conv_state = await self.store.get_conversation_state(user_id, conversation_id)
 
         # 2. Check if we need to consolidate memory (context too large)
-        if self.context_manager.should_consolidate(conversation_history):
-            summary = await self.summarizer.summarize_conversation(conversation_history)
+        if self.context_manager.should_consolidate(effective_history):
+            summary = await self.summarizer.summarize_conversation(effective_history)
             await self.store.save_summary(user_id, conversation_id, summary)
             conv_state["summary"] = summary
             conv_state["consolidation_count"] = conv_state.get("consolidation_count", 0) + 1
@@ -65,7 +73,7 @@ class MemoryManager:
 
         # 4. Build optimal context within token limits
         context = self.context_manager.build_context(
-            conversation_history=conversation_history,
+            conversation_history=effective_history,
             conversation_summary=conv_state.get("summary"),
             relevant_memories=relevant_memories,
             max_tokens=max_context_tokens
@@ -85,7 +93,7 @@ class MemoryManager:
         return {
             "context": context,
             "metadata": {
-                "stm_turns": len(conversation_history),
+                "stm_turns": len(effective_history),
                 "ltm_memories_retrieved": len(relevant_memories),
                 "has_summary": bool(conv_state.get("summary")),
                 "consolidation_count": conv_state.get("consolidation_count", 0),

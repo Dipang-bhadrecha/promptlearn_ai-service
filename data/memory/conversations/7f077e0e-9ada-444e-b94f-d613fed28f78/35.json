@@ -1,0 +1,43 @@
+{
+  "turns": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-10T11:00:00.439863"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi there! I'm PromptLearn, your AI programming tutor. I'm here to help you learn and improve your coding skills.\n\nTo get started, what programming topics are you interested in learning about today? Or, if you have a specific question, feel free to ask!\n",
+      "timestamp": "2026-02-10T11:00:01.972119"
+    },
+    {
+      "role": "user",
+      "content": "i want to learn css and tsx file related concept here",
+      "timestamp": "2026-02-10T11:00:37.312773"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-10T11:05:39.083834"
+    },
+    {
+      "role": "assistant",
+      "content": "No response from model",
+      "timestamp": "2026-02-10T11:05:40.216812"
+    },
+    {
+      "role": "user",
+      "content": "i want to learn css and tsx file related concept here",
+      "timestamp": "2026-02-10T11:05:48.444768"
+    },
+    {
+      "role": "assistant",
+      "content": "No response from model",
+      "timestamp": "2026-02-10T11:05:49.727263"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-10T11:05:49.727311",
+    "turn_count": 7
+  }
+}

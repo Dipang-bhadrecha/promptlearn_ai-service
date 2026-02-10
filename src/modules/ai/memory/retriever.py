@@ -18,9 +18,10 @@ class MemoryRetriever:
     def __init__(self, memory_store):
         self.store = memory_store
         self.embeddings_cache = {}
+        self.embedding_model = os.getenv("GEMINI_EMBEDDING_MODEL", "models/gemini-embedding-001")
         self.gemini_embedding_endpoint = (
             "https://generativelanguage.googleapis.com/v1beta/"
-            "models/text-embedding-004:embedContent"
+            f"{self.embedding_model}:embedContent"
         )
 
     async def find_relevant_context(
@@ -117,7 +118,6 @@ class MemoryRetriever:
                     params={"key": api_key},
                     headers={"Content-Type": "application/json"},
                     json={
-                        "model": "models/text-embedding-004",
                         "content": {
                             "parts": [{"text": text}]
                         }

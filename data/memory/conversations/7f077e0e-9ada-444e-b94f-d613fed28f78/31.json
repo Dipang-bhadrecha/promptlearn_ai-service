@@ -1,0 +1,13 @@
+{
+  "turns": [
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-10T10:54:21.599197"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-10T10:54:21.599228",
+    "turn_count": 1
+  }
+}

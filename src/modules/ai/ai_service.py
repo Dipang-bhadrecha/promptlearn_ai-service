@@ -2,6 +2,7 @@
 AI Service - Main business logic for AI generation
 Now with full memory system integration
 """
+import asyncio
 from modules.ai.ai_schemas import GenerateRequest, GenerateResponse
 from modules.ai.memory.memory_manager import MemoryManager
 from modules.ai.context_builder import SYSTEM_PROMPT
@@ -9,6 +10,15 @@ from shared.llm_client import call_llm
 
 # Initialize memory manager (singleton)
 memory_manager = MemoryManager()
+_user_locks = {}
+
+
+def _get_user_lock(user_id: str) -> asyncio.Lock:
+    lock = _user_locks.get(user_id)
+    if lock is None:
+        lock = asyncio.Lock()
+        _user_locks[user_id] = lock
+    return lock
 
 
 async def generate_response(req: GenerateRequest) -> GenerateResponse:
@@ -22,34 +32,37 @@ async def generate_response(req: GenerateRequest) -> GenerateResponse:
     4. Save assistant response to memory
     """
 
-    # 1️⃣ Process conversation through memory system
-    memory_result = await memory_manager.process_conversation(
-        user_id=str(req.user_id),
-        conversation_id=str(req.conversation_id),
-        new_message=req.message,
-        conversation_history=req.messages,
-        max_context_tokens=3000
-    )
+    # Serialize requests per user to avoid API bursts/rate limits
+    user_lock = _get_user_lock(str(req.user_id))
+    async with user_lock:
+        # 1️⃣ Process conversation through memory system
+        memory_result = await memory_manager.process_conversation(
+            user_id=str(req.user_id),
+            conversation_id=str(req.conversation_id),
+            new_message=req.message,
+            conversation_history=req.messages,
+            max_context_tokens=3000
+        )
 
-    # 2️⃣ Get enriched context
-    enriched_context = memory_result["context"]
+        # 2️⃣ Get enriched context
+        enriched_context = memory_result["context"]
 
-    # 3️⃣ Add system prompt if not present
-    if not any(msg.get("role") == "system" for msg in enriched_context):
-        enriched_context.insert(0, {
-            "role": "system",
-            "content": SYSTEM_PROMPT.strip()
-        })
+        # 3️⃣ Add system prompt if not present
+        if not any(msg.get("role") == "system" for msg in enriched_context):
+            enriched_context.insert(0, {
+                "role": "system",
+                "content": SYSTEM_PROMPT.strip()
+            })
 
-    # 4️⃣ Call LLM
-    assistant_text = await call_llm(enriched_context)
+        # 4️⃣ Call LLM
+        assistant_text = await call_llm(enriched_context, options=req.options)
 
-    # 5️⃣ Save assistant response to memory
-    await memory_manager.save_assistant_response(
-        user_id=str(req.user_id),
-        conversation_id=str(req.conversation_id),
-        response=assistant_text
-    )
+        # 5️⃣ Save assistant response to memory
+        await memory_manager.save_assistant_response(
+            user_id=str(req.user_id),
+            conversation_id=str(req.conversation_id),
+            response=assistant_text
+        )
 
     # 6️⃣ Return response with rich metadata
     return GenerateResponse(
