@@ -1,0 +1,28 @@
+{
+  "turns": [
+    {
+      "role": "user",
+      "content": "def greet(name):",
+      "timestamp": "2026-02-12T06:38:26.916454"
+    },
+    {
+      "role": "user",
+      "content": "def greet(name):",
+      "timestamp": "2026-02-12T06:38:58.132677"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-12T06:39:04.542769"
+    },
+    {
+      "role": "user",
+      "content": "def greet(name):\nwhat is this ",
+      "timestamp": "2026-02-12T06:40:49.356178"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-02-12T06:40:49.356187",
+    "turn_count": 4
+  }
+}

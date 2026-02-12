@@ -4,8 +4,6 @@ import httpx
 from typing import List, Dict, Optional, Any
 
 DEFAULT_GEMINI_MODELS = [
-    "models/gemini-1.5-flash",
-    "models/gemini-1.5-pro",
     "models/gemini-2.0-flash",
 ]
 
